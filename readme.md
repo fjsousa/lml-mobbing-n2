@@ -17,64 +17,35 @@ First, install Poetry if you haven't already:
 
 ---
 
-### **2. Create and Initialize Your Project**
+### **2. Install dependencies**
 
-1. Create a new project directory:
+1. Clone and cd to this repo
    ```bash
-   mkdir my_project
-   cd my_project
+   cd this_project
    ```
 
-2. Initialize the project with Poetry:
+2. Install deps with Poetry:
    ```bash
-   poetry init
-   ```
-   Follow the prompts to set up project metadata (name, version, description, etc.).
-
----
-
-### **3. Add Dependencies**
-
-1. Add core dependencies for your project:
-   ```bash
-   poetry add numpy pandas matplotlib
-   ```
-
-2. Add Jupyter Notebook as a dependency:
-   ```bash
-   poetry add notebook
-   ```
-
-3. Optionally, add development tools like linters and testing libraries:
-   ```bash
-   poetry add --dev black flake8 pytest
+   poetry install
    ```
 
 ---
 
-### **4. Set Up Jupyter Kernel**
+### **3. Setup Jupyter Kernel**
 
-To ensure Jupyter uses the Python environment from Poetry, follow these steps:
-
-1. Add `ipykernel` to the project:
-   ```bash
-   poetry add ipykernel
-   ```
-
-2. Activate the Poetry environment:
+1. Activate the Poetry environment:
    ```bash
    poetry shell
    ```
 
-3. If this doesn't activate the environment try:
+2. Source the file
    ```bash
-   poetry env info --path
    # source ../bin/activate
    ```
 
 ---
 
-### **5. Launch Jupyter Notebook**
+### **4. Launch Jupyter Notebook**
 
 Start Jupyter Notebook:
 ```bash
@@ -85,7 +56,7 @@ jupyter notebook
 
 ---
 
-### **6. Verify the Setup**
+### **5. Verify the Setup**
 
 1. In a Jupyter notebook, check that the correct Python environment is being used:
    ```python
@@ -97,47 +68,11 @@ jupyter notebook
 
 ---
 
-### **7. Example Project Structure**
-
-Your project should have a structure like this:
-
-```
-my_project/
-├── my_project/           # Main package folder
-│   ├── __init__.py
-│   └── main.py           # Entry point for your project (optional)
-├── notebooks/            # Jupyter notebooks
-│   └── analysis.ipynb    # Example notebook
-├── tests/                # Test folder
-│   └── test_main.py      # Example test
-├── pyproject.toml        # Managed by Poetry
-├── README.md             # Project description
-├── .gitignore            # Ignore unnecessary files
-└── .env                  # Environment variables (optional)
-```
-
----
-
-### **8. Gitignore**
-
-Create a `.gitignore` file to exclude unnecessary files:
-```
-# .gitignore
-__pycache__/
-*.pyc
-*.pyo
-*.ipynb_checkpoints/
-venv/
-.env
-```
-
----
-
-### **9. Day-to-Day Workflow**
+### **6. Day-to-Day Workflow**
 
 - To activate the Poetry environment:
   ```bash
-  poetry shell
+  poetry shell # (and source...)
   ```
 - To add new dependencies:
   ```bash
