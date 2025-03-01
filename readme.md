@@ -7,15 +7,13 @@ First, install Poetry if you haven't already:
 
 - **On Linux/macOS**:
   ```bash
-  curl -sSL https://install.python-poetry.org | python3 -
+  curl -sSL https://install.python-poetry.org | python3 - --version 2.1.1
   ```
 
-- **On Windows** (via PowerShell):
+- **On Windows** (via PowerShell): (TODO: add version as above)
   ```powershell
   (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicP) | python -
   ```
-
-Follow the prompts and restart your terminal to ensure Poetry is available.
 
 ---
 
@@ -167,9 +165,3 @@ venv/
   source /home/fsousa/.cache/pypoetry/virtualenvs/1-micrograd-wbWMg9m4-py3.10/bin/activate
 
   ```
-
-
-
-
-
-
