@@ -1,7 +1,3 @@
-Great to hear it was successful! Here's a concise summary of the Poetry setup with Jupyter Notebook, formatted in Markdown for your README file.
-
----
-
 ## Project Setup with Poetry and Jupyter Notebook
 
 This guide explains how to set up a Python project using Poetry for dependency management and Jupyter Notebook for interactive development.
