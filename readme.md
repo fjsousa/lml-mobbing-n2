@@ -1,6 +1,6 @@
 ## Project Setup with Poetry and Jupyter Notebook
 
-This guide explains how to set up a Python project using Poetry for dependency management and Jupyter Notebook for interactive development.
+This guide explains how to set this python project using Poetry for dependency management and Jupyter Notebook for interactive development.
 
 ### **1. Install Poetry**
 First, install Poetry if you haven't already:
